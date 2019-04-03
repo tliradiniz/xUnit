@@ -4,7 +4,7 @@ module Api
     class MissingController < ApplicationController
 
       def index
-        count_abducted = (Float((Survivor.where.not(status: "alive").count))/Float(Survivor.count)*100).round(2)
+        count_abducted = (Float((Survivor.where.not(status: "alive").count))/Float(Survivor.count)*100)
         percentage = count_abducted.to_s + "%"
 
         render json: {status: 'SUCCESS', message:"Porcentagem de abduzidos" , data:percentage}, status: :ok

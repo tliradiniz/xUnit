@@ -16,7 +16,7 @@ module Api
       def create
         survivor = Survivor.new(article_params)
         if survivor.save
-          render json: {status: 'SUCCESS', message:'Sobrevivente Criadoo', data:survivor},status: :ok
+          render json: {status: 'SUCCESS', message:'Sobrevivente Criado', data:survivor},status: :ok
         else
           render json: {status: 'ERROR', message:'Sobrevivente não criado', data:survivor.errors},status: :unprocessable_entity
         end
