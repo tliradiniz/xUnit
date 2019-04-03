@@ -15,7 +15,7 @@ use POST method at localhost:3000/api/v1/survivors with the following json:
 
 {
 
-  "name":"*Insert name here*",
+ 	"name":"*Insert name here*",  
   
 	"age":"*Insert Age here*",
 	
