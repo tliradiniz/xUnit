@@ -9,16 +9,16 @@ module Api
 
       def show
         survivor = Survivor.find(params[:id])
-        render json: {status: 'SUCCESS', message:'Mostrados', data:survivor},status: :ok
+        render json: {status: 'SUCCESS', message:'Mostrados', data:survivor}, status: :ok
 
       end
 
       def create
         survivor = Survivor.new(article_params)
         if survivor.save
-          render json: {status: 'SUCCESS', message:'Sobrevivente Criado', data:survivor},status: :ok
+          render json: {status: 'SUCCESS', message:'Sobrevivente Criado', data:survivor}, status: :ok
         else
-          render json: {status: 'ERROR', message:'Sobrevivente não criado', data:survivor.errors},status: :unprocessable_entity
+          render json: {status: 'ERROR', message:'Sobrevivente não criado', data:survivor.errors}, status: :unprocessable_entity
         end
       end
 
@@ -26,9 +26,9 @@ module Api
       def update
         survivor = Survivor.find(params[:id])
         if survivor.update_attributes(survivor_update)
-          render json: {status: 'SUCCESS', message:'Localização atualizada', data:survivor},status: :ok
+          render json: {status: 'SUCCESS', message:'Localização atualizada', data:survivor}, status: :ok
         else
-          render json: {status: 'ERROR', message:'Localização não pode ser atualizada', data:survivor.errors},status: :unprocessable_entity
+          render json: {status: 'ERROR', message:'Localização não pode ser atualizada', data:survivor.errors}, status: :unprocessable_entity
         end
       end
 
