@@ -3,7 +3,10 @@ Rails.application.routes.draw do
     namespace 'v1' do
       resources :survivors
       resources :alive, only: [:index, :create]
-      resources :missing, only: [:index]
+      resources :abducted, only: [:index]
+
+      #TODO
+      # modificar Rota para formato POST ID/accusing_abduction/ID
 
     end
   end

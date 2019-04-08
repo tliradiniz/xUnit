@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  age: 1
-  gender: MyString
-  last_location: MyString
+  name: 'Maria Antonia'
+  age: 23
+  gender: 'Feminino'
+  last_location: '5, 5'
 
 two:
-  name: MyString
-  age: 1
-  gender: MyString
-  last_location: MyString
+  name: 'José maria'
+  age: 14
+  gender: 'Masculino'
+  last_location: '10, 10'
