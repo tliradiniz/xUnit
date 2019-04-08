@@ -11,12 +11,13 @@ class AlivesControllerTest < ActionDispatch::IntegrationTest
   test "should create abducted alert" do
     assert_difference('AbductedUser.count') do
       post '/api/v1/alive', params: {
-          id_user:'298486374',
+          id_user: '298486374',
           id_target: '980190962'
       }
     end
 
     assert_response 201
   end
+
 
 end

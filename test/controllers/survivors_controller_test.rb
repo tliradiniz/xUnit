@@ -10,11 +10,11 @@ class SurvivorsControllerTest < ActionDispatch::IntegrationTest
   test "should create survivor" do
     assert_difference('Survivor.count') do
       post '/api/v1/survivors', params: {
-                name:'Carla',
-                age:33,
-                gender:'Feminino',
-                last_location:'20, 50'
-              }
+          name: 'Carla',
+          age: 33,
+          gender: 'Feminino',
+          last_location: '20, 50'
+      }
     end
 
     assert_response 201
@@ -23,10 +23,10 @@ class SurvivorsControllerTest < ActionDispatch::IntegrationTest
   test "should create second survivor" do
     assert_difference('Survivor.count') do
       post '/api/v1/survivors', params: {
-          name:'Marcio',
-          age:45,
-          gender:'Masculino',
-          last_location:'80, 120'
+          name: 'Marcio',
+          age: 45,
+          gender: 'Masculino',
+          last_location: '80, 120'
       }
 
     end
@@ -40,7 +40,7 @@ class SurvivorsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update survivor" do
-    patch '/api/v1/survivors/980190962', params: { last_location:'0, 0'}
+    patch '/api/v1/survivors/980190962', params: {last_location: '0, 0'}
     assert_response 200
   end
 

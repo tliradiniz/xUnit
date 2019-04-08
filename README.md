@@ -47,7 +47,7 @@ use GET method at localhost:3000/api/v1/alive
 
 **To change de amount of missing_count for a specific survivor**
 
-use POST method at localhost:3000/api/v1/alive/ to add 1 to the missing_count for a respective ID. A id_user is the one that is accusing and the id_target is the id being accused. Attention: If a survivor missing_count goes to 3 or more, it will be abducted. use the Json as it follows:
+use POST method at localhost:3000/api/v1/alive/ to add 1 to the missing_count for a respective ID. A id_user is the one that is accusing and the id_target is the id being accused of abduction. Attention: If a survivor missing_count goes to 3 or more, he will be abducted. use the Json as it follows:
 
 {
 
