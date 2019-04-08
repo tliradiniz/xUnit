@@ -58,4 +58,4 @@ use POST method at localhost:3000/api/v1/alive/ to add 1 to the missing_count fo
 
 **To see the percentage of survivors that are abducted**
 
-use GET method at localhost:3000/api/v1/missing to see the percentage of missing survivors.
+use GET method at localhost:3000/api/v1/abducted to see the percentage of missing survivors.
